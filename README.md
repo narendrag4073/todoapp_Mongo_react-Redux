@@ -2,11 +2,12 @@
     1) Start database
         $ cd ~/mongo/bin
         $ ./mongod --dbpath ~/mongo-data
+    2) npm install 
 
-    2) Start server 
-        $ npm run webpack
+    3) Start server 
+        $  npm start OR npm run webpack
         
-    3) Build bundle 
+    4) Build bundle 
         $ npm run build
         
 # Test

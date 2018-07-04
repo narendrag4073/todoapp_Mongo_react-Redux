@@ -1,13 +1,12 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
 
-import { bindActionCreators } from 'redux'
-import { getTodoList } from '../actions/index'
+import { bindActionCreators } from 'redux';
+import { getTodoList } from '../actions/index';
 
-import Header from '../containers/Header'
-import TodoList from '../containers/TodoList'
-import AddNewTodo from '../containers/AddNewTodo'
+import Header from '../containers/Header';
+import TodoList from '../containers/TodoList';
 import AddNewTodoForm from '../containers/AddNewTodoForm';
 import EditTodoForm from '../containers/EditTodoForm';
 

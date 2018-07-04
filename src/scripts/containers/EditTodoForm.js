@@ -52,7 +52,7 @@ class EditTodoForm extends Component {
             <form 
                 className="fc-black fc-black bg-light-grey col-md-12  pb-10" 
                 onSubmit={(e)=>this.handeleFormSubmit(e)}>
-                <label className="pb-10 pt-10" > Title</label>
+                <label className="pb-10 pt-10" > Title</label><i className="glyphicon glyphicon-star-empty icon_star"></i>
                 {this.getErrorMsg('title')}
                 <input 
                     type="text"
@@ -62,7 +62,7 @@ class EditTodoForm extends Component {
                     onChange={(e)=>this.setState({ title: e.target.value })}
                 />
                 
-                <label className="pb-10 pt-10"> Description</label>
+                <label className="pb-10 pt-10"> Description</label><i className="glyphicon glyphicon-star-empty icon_star"></i>
                 {this.getErrorMsg('description')}
                 <textarea 
                     type="text"

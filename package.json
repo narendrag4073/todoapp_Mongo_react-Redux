@@ -1,19 +1,15 @@
 {
-  "name": "react-redux-mongo-heroku",
+  "name": "react-redux-mongo-todo",
   "version": "1.0.0",
   "description": "A simple todo app using mongo db",
-  "author": "Rexon M. Shrstha",
+  "author": "Narendra Gupta",
   "main": "index.js",
   "scripts": {
     "webpack": "webpack-dev-server",
     "start": "node server/server.js",
     "clean": "rimraf public",
     "build": "NODE_ENV=production npm run clean && webpack -p",
-    "postinstall": "NODE_ENV=production npm run clean && webpack -p",
-    "testServer": "mocha server/**/*.test.js",
-    "testServer-watch": "nodemon --exec 'npm run testServer'",
-    "testClient": "mocha test/.setup.js test/**/*.test.js",
-    "testClient-watch": "nodemon --exec 'npm run testClient'"
+    "postinstall": "NODE_ENV=production npm run clean && webpack -p"
   },
   "dependencies": {
     "axios": "^0.15.3",

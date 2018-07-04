@@ -41,32 +41,6 @@ export function addNewTodo(todoTask) {
     }
 }
 
-export function toggleTodoState(todoId, todoState) {
-    return (dispatch, getState) => {
-        axios.post(`/api`, {
-            action: "update",
-            id: todoId,
-            completed: !todoState
-        })
-            .then(res => {
-
-                if (res.data.error) {
-                    return (console.warn(res.data.error))
-                }
-                let todos = getState().todoList.todos
-                let resTodo = res.data
-                let updatedTod = map(todos, todo => {
-                    if (todo._id == resTodo._id) {
-                        todo.completed = resTodo.completed
-                    }
-                    return todo
-                })
-                dispatch(updateTodoList(updatedTod))
-            }, rej => console.warn(`Couldn't update task status, ${rej}`))
-    }
-}
-
-
 export function removeTask(todoId) {
     return (dispatch, getState) => {
         axios.post(`/api`, {
