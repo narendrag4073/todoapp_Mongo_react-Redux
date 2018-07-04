@@ -10,8 +10,3 @@
     4) Build bundle 
         $ npm run build
         
-# Test
-    - Testing server/API
-        $ npm run testServer
-    - Testing client/React
-        $ npm run testClient
