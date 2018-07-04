@@ -9,4 +9,5 @@
         
     4) Build bundle 
         $ npm run build
-        
+
+    5)use node version >=7.3
